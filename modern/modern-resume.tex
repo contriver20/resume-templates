@@ -1,0 +1,226 @@
+\documentclass[]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+\newcommand{\resumeHeading}[3]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3}\fakeNewLine}
+
+% Create sub job position  heading. Parameters: Name, link, Tech stack
+\newcommand{\subJobHeading}[1]{\descript{#1}}
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[3]{\descript{#1}\hspace*{\fill}  \location{#3}\fakeNewLine}
+
+% Create project heading. Parameters: Name, link, Tech stack
+\newcommand{\projectHeading}[3]{\location{#1 | #2}\hfill
+\location{#3}\\}
+
+% create certification heading. Parameters: cert, date range
+\newcommand{\certHeading}[2]{\location{#1 \hfill #2}\\}
+
+
+% Parameters: courses
+\newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
+
+% Parameters: courses
+\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+ 
+%--------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+\newcommand{\yourName}{First Last}
+% How you want it to show up on the resume
+\newcommand{\yourWebsite}{contriver20.gitlab.io}
+% vs how you want it to show up. If it's you can just replace "\yourWebsiteLink" with "yourWebsite"
+\newcommand{\yourWebsiteLink}{https://contriver20.gitlab.io}
+\newcommand{\yourEmail}{yourEmail@gmail.com}
+\newcommand{\yourPhone}{727-555-1234}
+\newcommand{\githubUserName}{contriver20}
+\newcommand{\linkedInUserName}{contriver20}
+
+% An alternate profile section 
+% \alignProfileTable
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%     \ralewayBold{\href{\yourWebsiteLink}{\Large \yourName}} & 
+%     Email : \href{mailto:\yourEmail}{\yourEmail}
+%     \\
+%     \href{https://github.com/\githubUserName}{GitHub://\githubUserName} & 
+%     Mobile : \yourPhone
+%     \\
+%     \href{https://www.linkedin.com/in/\linkedInUserName}{LinkedIn://\linkedInUserName} & Website : \href{\yourWebsiteLink}{\yourWebsite}
+%     \\
+% \end{tabular*}
+
+\begin{center}
+    \Huge \scshape \latoRegular{\yourName} \\ \vspace{1pt}
+    \small \href{mailto:\yourEmail}{\underline{\yourEmail}}  $|$  \yourPhone $|$ 
+    \href{https://www.linkedin.com/in/\linkedInUserName}{\underline{linkedIn.com/in/\linkedInUserName}}
+    % \href{https://github.com/\githubUserName}{\underline{github/\githubUserName}} 
+    % $|$ \href{\yourWebsiteLink}{\underline{\yourWebsite}}
+\end{center}
+
+%--------------------------------------------------------------
+%    Summary 
+%--------------------------------------------------------------
+\section{Summary}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+In pellentesque massa placerat duis ultricies lacus sed turpis. 
+Id aliquet lectus proin nibh nisl condimentum id venenatis. 
+Eu feugiat pretium nibh ipsum consequat nisl.
+\sectionsep
+
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+\section{Skills and Competencies}
+\begin{skillList}
+    \singleItem{Languages:}{Java, C++, Python, C\#, PHP, Prolog, Bash, C, Racket, SQL} 
+	\sectionsep \\
+    \singleItem{Web Development and Markup:}{HTML, CSS, XML, JSON, YAML, Markdown, AWS (S3 and Lambda)}  
+	\sectionsep \\
+    \singleItem{Project Management, Design, and Testing:}{Jira, Git, Confluence, Scrum, Iterative development,
+		Kanban, UML, GoogleTest, GoogleMock, CUnit, Unittest, 
+		PyTest, GitLab Continuous Integration Continuous Delivery (Cl/CD), GitHub Cl/CD} 
+	\sectionsep \\
+    \singleItem{Tools, Scripting, and Applications:}{ Bash, PowerShell, Windows Batch, \LaTeX, 
+		GNU GCC, MSBuild, CMake, Docker, IDA Pro, Ghidra, 
+		Binary Ninja, Visual Studio, VSCode, VIM}
+\end{skillList}
+\sectionsep
+
+% A more concise alternate 
+% \begin{skillList}
+%     \doubleItem{Languages:}{Java, C++, Python, C\#, PHP, Prolog, Bash, C, Racket}%
+%     {Databases:}{SQL, MongoDB, Neo4j, DynamoDB}
+%     \\
+%     \doubleItem{Web Development:}{JavaScript, TypeScript, React, HTML/CSS}
+%     {Technology:}{Git, AWS, GCP, Azure, Docker, \LaTeX}%
+% \end{skillList}
+
+
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+\section{Professional Experience}
+\resumeHeading{Amazon}{Software Developer}{Apr 2014 – Aug 2023}
+\begin{bullets}
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    \item Consectetur purus ut faucibus pulvinar elementum integer enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur purus ut faucibus pulvinar elementum integer enim.
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    \item Consectetur purus ut faucibus pulvinar elementum integer enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur purus ut faucibus pulvinar elementum integer enim.
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    \item Consectetur purus ut faucibus pulvinar elementum integer enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur purus ut faucibus pulvinar elementum integer enim.
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    \item Consectetur purus ut faucibus pulvinar elementum integer enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur purus ut faucibus pulvinar elementum integer enim.
+\end{bullets}
+\sectionsep
+
+\pagebreak
+
+\subJobHeading{Cloud Engineer}
+\begin{bullets}
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    \item Consectetur purus ut faucibus pulvinar elementum integer enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur purus ut faucibus pulvinar elementum integer enim.
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    \item Consectetur purus ut faucibus pulvinar elementum integer enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur purus ut faucibus pulvinar elementum integer enim.
+\end{bullets}
+\sectionsep
+
+\subJobHeading{IT Administrator}
+\begin{bullets}
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    \item Consectetur purus ut faucibus pulvinar elementum integer enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur purus ut faucibus pulvinar elementum integer enim.
+\end{bullets}
+\sectionsep
+
+\resumeHeading{Sony Electronics}{Intern}{Apr 2012 – Mar 2014}
+\begin{bullets}
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    \item Consectetur purus ut faucibus pulvinar elementum integer enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+\end{bullets}
+\sectionsep
+
+\section{Volunteer Experience}
+\resumeHeading{BSides Clearwater}{Infrastructure Deputy}{Jan 2022 – Nov 2022}
+\begin{bullets}
+    \item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    \item Consectetur purus ut faucibus pulvinar elementum integer enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+\end{bullets}
+\sectionsep
+
+\resumeHeading{DefCon}{Workshop Deputy}{Jan 2022 – Nov 2022}
+\begin{bullets}
+    \item Consectetur purus ut faucibus pulvinar elementum integer enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+\end{bullets}
+\sectionsep
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education and Training}
+\projectHeading{AWS Academy Cloud Developing }{Amazon}{Mar 2022}
+\projectHeading{Certificate in Cyber Development}{University of Maryland
+Baltimore County Training}{Jul 2019}
+\projectHeading{AWS Academy Cloud Foundations }{US Army Cyber NCOA}{Oct 2018}
+\projectHeading{BS, Computer Science}{University of Florida}{May 2010}
+\sectionsep
+  
+%--------------------------------------------------------------
+%     Certifications
+%--------------------------------------------------------------
+\section{Certifications}
+\certHeading{AWS Developer - Asscociate}{Mar 2022 - Present}
+\certHeading{EC-Council Certified Ethical Hacker (CEH)}{2016 - Present}
+\certHeading{COMPTIA Security+}{2016 - Present}
+\certHeading{Certified GIAC Certified Forensic Examiner}{2016 - 2019}
+\sectionsep 
+
+%--------------------------------------------------------------
+%     Projects - commented out
+%--------------------------------------------------------------
+% \section{Projects}
+% 
+% \projectHeading{Automated Spear-Phisher}{https://github.com/Aarif123456/Fb-Twitter-gui}{Python, PySpark, Selenium, Apache, NLP, Big Data}
+% A security research tool to send targeted spam messages on either Facebook or Twitter. The program analyzes the feed of its target to increase the effectiveness of the messages.\\
+% \sectionsep
+%   
+% \projectHeading{Image Repository}{https://github.com/Aarif123456/image\_repository}{Java, PHP, React, TypeScript, Maven, GCP, MySQL}
+% A full-stack image repository, where users can store their files. Created a GCP cloud function to implement \href{https://www.cs.utexas.edu/~bwaters/publications/papers/cp-abe.pdf}{CP-ABE} encryption and used it to ensure files are secure at rest.\\
+% \sectionsep
+% 
+% \projectHeading{Biometric Dynamic Keystroke Spoofer}{https://github.com/Aarif123456/KeystrokeDynamicsSpoofer}{Python, Object-Oriented Design, CyberSecurity}
+% A program that authenticates users based on their typing patterns. And a spoofer that uses the genetic algorithm to mimic the user's typing pattern.
+% \sectionsep
+% 
+% \projectHeading{Distributed Key-Value store}{https://github.com/Aarif123456/Distributed-DB}{Java, Distributed System, Computer Networks, Concurrency}
+% A distributed key-value store which automatically replicates data in the background while the user manages their data. Implemented a custom P2P protocol to maximize fault tolerance and scalability.\\
+% \sectionsep
+% 
+% \projectHeading{War of Weebles}{https://github.com/Aarif123456/GoalOrientedBehaviour}{C\#, Unity, Concurrency, Artificial Intelligence}
+% A capture-the-flag-styled shooting game composed of AI-controlled players. The agents change their goals based on various factors, such as their health, current weapon, their personality and what they see.\\
+% \sectionsep
+% 
+% Example using bullets and dates 
+% \projectHeadingWithDate{Hogwart\textquotesingle{}s Library Management System}{https://github.com/Aarif123456/hogwartslibrary}{PHP, JavaScript, HTML, CSS, MySQL}{Aug 2019}
+% \begin{bullets}
+    % \item A full-stack library management system, where users can manage books and holds on their accounts. Users can search the library\textquotesingle{}s catalogue, which has every book mentioned in the Harry Potter series. The system distinguishes between 4 users. For examples, librarians who can also check or return books on behalf of users.\\
+% \end{bullets}
+% \sectionsep
+  
+
+\end{document}
